@@ -2,9 +2,15 @@
 
 ## Getting and installing the data and tools
 
+### Getting sample data - Chinook
+
 Download sample Chinook database, PostgreSQL version ([GitHub repo](https://github.com/lerocha/chinook-database/blob/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql)) with command:
 
 `wget https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql`
+
+### Accessing PostgreSQL CLI
+
+Use this to run PostgreSQL from the command line.
 
 Start PostgreSQL shell with command:
 
@@ -15,6 +21,14 @@ If this doesn't work (e.g. error "psql: error: connection to server on socket "/
 `set_pg`
 
 then try again.
+
+### Connecting PostgreSQL to Python with Psycopg2
+
+Do this to access PostgreSQL programmatically with Python.
+
+Install Psychpg2 with command:
+
+`pip3 install psycopg2`
 
 ## CI Repo Template Instructions
 
