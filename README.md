@@ -16,11 +16,15 @@ Start PostgreSQL shell with command:
 
 `psql`
 
-If this doesn't work (e.g. error "psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory"), first run:
+If this doesn't work (e.g. error "psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory"), first run `set_pg` then try again.
 
-`set_pg`
+To view current databases, run `\l`
 
-then try again.
+### Create and initialize chinook database with PostgreSQL
+
+- In PostgreSQL shell, run `CREATE DATABASE chinook;`
+- Run `\c chinook` to connect to the new database
+- While connected to this database, run `\i Chinook_PostgreSql.sql` to initialize the database from the file "Chinook_PostgreSql.sql"
 
 ### Connecting PostgreSQL to Python with Psycopg2
 
@@ -29,6 +33,14 @@ Do this to access PostgreSQL programmatically with Python.
 Install Psychpg2 with command:
 
 `pip3 install psycopg2`
+
+### Using SQLAlchemy library for more Pythonic data manipulation
+
+Write more abstract code to read and manipulate the database using more Python and less raw SQL. SQLAlchemy is a library that includes three levels of abstraction for this data manipulation, the highest one being an ORM.
+
+Install SQLAlchemy (version used in walkthrough video) with command:
+
+`pip3 install sqlalchemy==1.4.46`
 
 ## CI Repo Template Instructions
 
