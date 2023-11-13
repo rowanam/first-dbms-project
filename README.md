@@ -1,6 +1,26 @@
+# PostgreSQL Data Project
+
+## Getting and installing the data and tools
+
+Download sample Chinook database, PostgreSQL version ([GitHub repo](https://github.com/lerocha/chinook-database/blob/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql)) with command:
+
+`wget https://raw.githubusercontent.com/lerocha/chinook-database/master/ChinookDatabase/DataSources/Chinook_PostgreSql.sql`
+
+Start PostgreSQL shell with command:
+
+`psql`
+
+If this doesn't work (e.g. error "psql: error: connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: No such file or directory"), first run:
+
+`set_pg`
+
+then try again.
+
+## CI Repo Template Instructions
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome rowanam,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
